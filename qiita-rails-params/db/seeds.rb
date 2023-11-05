@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Article.create([
-  { title: '田中一郎' },
-  { title: '田中次郎' },
-  { title: '山中一郎' },
-  { title: '山中次郎' }
+User.create([
+  { name: '田中一郎' },
+  { name: '田中次郎' },
+  { name: '山中一郎' },
+  { name: '山中次郎' }
 ])
