@@ -9,10 +9,10 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh \
     && rm -rf /var/lib/apt/lists/* \
     && npm install -g yarn
 
-# WORKDIR /app/qiita-rails-params
-# COPY /qiita-rails-params/Gemfile /qiita-rails-params/Gemfile.lock ./
-# RUN bundle install
-# COPY . .
+WORKDIR /app/qiita-rails-params
+COPY /qiita-rails-params/Gemfile /qiita-rails-params/Gemfile.lock ./
+RUN bundle install
+COPY . .
 
 RUN rm -f tmp/pids/server.pid
 
