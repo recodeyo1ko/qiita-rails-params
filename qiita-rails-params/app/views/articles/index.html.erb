@@ -1,0 +1,10 @@
+<h1> 一覧画面 </h1>
+
+<div>
+    <h2>記事一覧</h2>
+    <% @articles.each do |article| %>
+        <div>
+            <%= article.id %>件目: <%= link_to article.title, article_path(article.id) %>
+        </div>
+    <% end %>
+</div>
