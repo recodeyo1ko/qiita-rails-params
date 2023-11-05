@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Article.create([
-  { title: 'title1' },
-  { title: 'title2' },
-  { title: 'title3' },
-  { title: 'title4' }
+  { title: '田中一郎' },
+  { title: '田中次郎' },
+  { title: '山中一郎' },
+  { title: '山中次郎' }
 ])
